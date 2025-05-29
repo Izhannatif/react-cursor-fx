@@ -23,7 +23,8 @@ yarn add react-cursor-fx framer-motion
 
 ## Basic Usage
 
-```jsx
+```js
+
 import { CursorProvider, Cursor, CursorTarget } from 'react-cursor-fx';
 
 function App() {
@@ -44,12 +45,15 @@ function App() {
     </CursorProvider>
   );
 }
+
 ```
+
 ## Custom Configuration
 
 ### You can customize the cursor appearance and behavior by passing a config object to the CursorProvider:
 
-```jsx
+```js
+
 import { CursorProvider, Cursor, CursorTarget } from 'react-cursor-fx';
 
 const customConfig = {
@@ -88,11 +92,13 @@ function App() {
     </CursorProvider>
   );
 }
+
 ```
 ## Custom Shapes
 ### You can create custom cursor shapes:
 
-```jsx
+```js
+
 const customShapesConfig = {
   default: {
     width: 30,
@@ -142,7 +148,9 @@ const customShapesConfig = {
     ],
   },
 };
+
 ```
+
 ## API Reference
 
 ### `<CursorProvider>`
@@ -173,7 +181,8 @@ Props:
 ### `useCursor Hook`
 For advanced use cases, you can use the hook directly:
 
-```jsx
+```js
+
 import { useCursor } from 'react-cursor-fx';
 
 function MyComponent() {
@@ -189,7 +198,9 @@ function MyComponent() {
     </div>
   );
 }
+
 ```
+
 ## Configuration Options
 ### Cursor Variant Properties
 
