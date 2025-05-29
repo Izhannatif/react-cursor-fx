@@ -223,6 +223,11 @@ Size and Shape
 -	mass: Spring mass (higher = more inertia)
 
 
-License
-MIT
 
+## Maintenance Status
+ `Active`: Formidable is actively working on this project, and we expect to continue to work for the foreseeable future. Bug reports, feature requests and pull requests are welcome
+
+
+License
+
+MIT
