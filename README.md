@@ -142,25 +142,34 @@ const customShapesConfig = {
 };
 ```
 ## API Reference
-### <CursorProvider>
+<CursorProvider>
 Provides cursor context to your application.
+
 Props:
- -	[config (optional): Custom cursor configuration]
- -	[hideNativeCursor (optional): Whether to hide the native cursor (default: true)]
+ -	config (optional): Custom cursor configuration
+ -	hideNativeCursor (optional): Whether to hide the native cursor (default: true)
+
+
 <Cursor>
 Renders the custom cursor.
+
 Props:
-•	size (optional): Base size of the cursor in pixels (default: 24)
-•	zIndex (optional): z-index of the cursor (default: 9999)
-•	showOnTouch (optional): Whether to show the cursor on touch devices (default: false)
+-	size (optional): Base size of the cursor in pixels (default: 24)
+-	zIndex (optional): z-index of the cursor (default: 9999)
+-	showOnTouch (optional): Whether to show the cursor on touch devices (default: false)
+
+
 <CursorTarget>
 Wraps elements to apply cursor effects when hovering.
+
 Props:
-•	variant: The cursor variant to use when hovering
-•	onEnter (optional): Callback function when cursor enters the element
-•	onLeave (optional): Callback function when cursor leaves the element
+-	variant: The cursor variant to use when hovering
+-	onEnter (optional): Callback function when cursor enters the element
+-	onLeave (optional): Callback function when cursor leaves the element
+
 useCursor Hook
 For advanced use cases, you can use the hook directly:
+
 ```jsx
 import { useCursor } from 'react-cursor-fx';
 
@@ -178,34 +187,41 @@ function MyComponent() {
   );
 }
 ```
-Configuration Options
-Cursor Variant Properties
+## Configuration Options
+### Cursor Variant Properties
+
 Each cursor variant can have the following properties:
+
 Size and Shape
-•	width: Width of the cursor in pixels
-•	height: Height of the cursor in pixels
-•	scale: Scale factor for the cursor (useful for hover effects)
-•	shape: "circle", "square", or "custom"
-•	borderRadius: Border radius for square shapes
-Appearance
-•	color: Background color of the cursor
-•	opacity: Opacity of the cursor (0-1)
-•	borderColor: Border color
-•	borderWidth: Border width in pixels
-•	borderStyle: Border style (solid, dashed, etc.)
-Label
-•	label: Text or React node to display inside the cursor
-•	fontSize: Font size for the label
-•	fontWeight: Font weight for the label
-•	labelColor: Text color for the label
-Custom Elements
-•	customElement: React node for custom shapes
-•	innerElements: Array of objects with inner elements and their transitions
-Animation
-•	transition: Object with animation properties
-o	stiffness: Spring stiffness (higher = more responsive)
-o	damping: Spring damping (higher = less oscillation)
-o	mass: Spring mass (higher = more inertia)
+-	width: Width of the cursor in pixels
+-	height: Height of the cursor in pixels
+-	scale: Scale factor for the cursor (useful for hover effects)
+-	shape: "circle", "square", or "custom"
+-	borderRadius: Border radius for square shapes
+
+### Appearance
+-	color: Background color of the cursor
+-	opacity: Opacity of the cursor (0-1)
+-	borderColor: Border color
+-	borderWidth: Border width in pixels
+-	borderStyle: Border style (solid, dashed, etc.)
+
+### Label
+-	label: Text or React node to display inside the cursor
+-	fontSize: Font size for the label
+-	fontWeight: Font weight for the label
+-	labelColor: Text color for the label
+
+### Custom Elements
+-	customElement: React node for custom shapes
+-	innerElements: Array of objects with inner elements and their transitions
+### Animation
+-	transition: Object with animation properties
+-	stiffness: Spring stiffness (higher = more responsive)
+-	damping: Spring damping (higher = less oscillation)
+-	mass: Spring mass (higher = more inertia)
+
+
 License
 MIT
 
