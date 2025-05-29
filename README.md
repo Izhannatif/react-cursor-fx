@@ -143,7 +143,7 @@ const customShapesConfig = {
 ```
 ## API Reference
 
-### <CursorProvider>
+### `<CursorProvider>`
 Provides cursor context to your application.
 
 Props:
@@ -151,7 +151,7 @@ Props:
  -	hideNativeCursor (optional): Whether to hide the native cursor (default: true)
 
 
-### `<Cursor>
+### `<Cursor>`
 Renders the custom cursor.
 
 Props:
@@ -160,7 +160,7 @@ Props:
 -	showOnTouch (optional): Whether to show the cursor on touch devices (default: false)
 
 
-### `<CursorTarget>
+### `<CursorTarget>`
 Wraps elements to apply cursor effects when hovering.
 
 Props:
@@ -168,7 +168,7 @@ Props:
 -	onEnter (optional): Callback function when cursor enters the element
 -	onLeave (optional): Callback function when cursor leaves the element
 
-### useCursor Hook
+### `useCursor Hook`
 For advanced use cases, you can use the hook directly:
 
 ```jsx
