@@ -1,6 +1,7 @@
 # `React Cursor FX`
 ## A lightweight, customizable cursor library for React applications.
-Features
+
+### Features
 -	🎨 Fully customizable cursor appearance (shape, size, color)
 -	🔄 Smooth animations with Framer Motion
 -	🎯 Easy element targeting
