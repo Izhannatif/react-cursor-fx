@@ -151,7 +151,7 @@ Props:
  -	hideNativeCursor (optional): Whether to hide the native cursor (default: true)
 
 
-### <Cursor>
+### `<Cursor>
 Renders the custom cursor.
 
 Props:
@@ -160,7 +160,7 @@ Props:
 -	showOnTouch (optional): Whether to show the cursor on touch devices (default: false)
 
 
-### <CursorTarget>
+### `<CursorTarget>
 Wraps elements to apply cursor effects when hovering.
 
 Props:
