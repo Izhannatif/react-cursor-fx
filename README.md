@@ -11,16 +11,16 @@ Features
 <br>
 
 ## Installation
-<hr>
+
 ```bash
 npm install react-cursor-fx framer-motion
 # or
 yarn add react-cursor-fx framer-motion
 ```
-<br>
+
 
 ## Basic Usage
-<hr>
+
 ```jsx
 import { CursorProvider, Cursor, CursorTarget } from 'react-cursor-fx';
 
