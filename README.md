@@ -1,14 +1,15 @@
 # `React Cursor FX`
 ## A lightweight, customizable cursor library for React applications.
 Features
-•	🎨 Fully customizable cursor appearance (shape, size, color)
-•	🔄 Smooth animations with Framer Motion
-•	🎯 Easy element targeting
-•	📱 Mobile fallback options
-•	🔠 Customizable text labels
-•	🖼️ Support for custom shapes and inner elements
-•	⚡ Server-side rendering compatible (Next.js)
-<br>
+-	🎨 Fully customizable cursor appearance (shape, size, color)
+-	🔄 Smooth animations with Framer Motion
+-	🎯 Easy element targeting
+-	📱 Mobile fallback options
+-	🔠 Customizable text labels
+-	🖼️ Support for custom shapes and inner elements
+-	⚡ Server-side rendering compatible (Next.js)
+
+
 
 ## Installation
 
@@ -193,7 +194,7 @@ function MyComponent() {
 
 Each cursor variant can have the following properties:
 
-Size and Shape
+### Size and Shape
 -	width: Width of the cursor in pixels
 -	height: Height of the cursor in pixels
 -	scale: Scale factor for the cursor (useful for hover effects)
