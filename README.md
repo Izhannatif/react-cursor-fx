@@ -43,8 +43,10 @@ function App() {
   );
 }
 ```
-Custom Configuration
-You can customize the cursor appearance and behavior by passing a config object to the CursorProvider:
+## Custom Configuration
+
+### You can customize the cursor appearance and behavior by passing a config object to the CursorProvider:
+
 ```jsx
 import { CursorProvider, Cursor, CursorTarget } from 'react-cursor-fx';
 
@@ -85,8 +87,9 @@ function App() {
   );
 }
 ```
-Custom Shapes
-You can create custom cursor shapes:
+## Custom Shapes
+### You can create custom cursor shapes:
+
 ```jsx
 const customShapesConfig = {
   default: {
@@ -138,12 +141,12 @@ const customShapesConfig = {
   },
 };
 ```
-API Reference
-<CursorProvider>
+## API Reference
+### <CursorProvider>
 Provides cursor context to your application.
 Props:
-•	config (optional): Custom cursor configuration
-•	hideNativeCursor (optional): Whether to hide the native cursor (default: true)
+ -	[config (optional): Custom cursor configuration]
+ -	[hideNativeCursor (optional): Whether to hide the native cursor (default: true)]
 <Cursor>
 Renders the custom cursor.
 Props:
