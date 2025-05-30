@@ -57,7 +57,7 @@ export const Cursor: React.FC<CursorProps> = ({ size = 24, zIndex = 9999, showOn
     // Show cursor after a short delay to prevent flash on page load
     const timer = setTimeout(() => {
       setIsVisible(true)
-    }, 100)
+    }, 50)
 
     return () => clearTimeout(timer)
   }, [])

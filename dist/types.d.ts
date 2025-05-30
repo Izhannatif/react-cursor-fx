@@ -45,6 +45,8 @@ export interface CursorContextType {
     config: CursorConfig;
     resetCursorToDefault: () => void;
     mousePosition: MousePosition;
+    setGlobalCursorVariant?: (variant: string) => void;
+    clearGlobalCursorVariant?: () => void;
 }
 export interface MousePosition {
     x: number;

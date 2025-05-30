@@ -73,7 +73,9 @@ export interface CursorContextType {
   setCursorVariant: (variant: string, mode?: "push" | "pop" | "reset") => void
   config: CursorConfig
   resetCursorToDefault: () => void
-  mousePosition: MousePosition
+  mousePosition: MousePosition,
+  setGlobalCursorVariant?: (variant: string) => void;
+  clearGlobalCursorVariant?: () => void;
 }
 
 export interface MousePosition {

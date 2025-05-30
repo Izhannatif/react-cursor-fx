@@ -19,8 +19,8 @@ export const defaultCursorConfig: CursorConfig = {
     fontWeight: "bold",
     labelColor: "#000",
     transition: {
-      stiffness: 300,
-      damping: 30,
+      stiffness: 800,
+      damping: 80,
       mass: 1,
     },
   },
@@ -28,10 +28,12 @@ export const defaultCursorConfig: CursorConfig = {
 
 const CursorContext = createContext<CursorContextType>({
   cursorState: { ...defaultCursorConfig.default, variant: "default" },
-  setCursorVariant: () => {},
+  setCursorVariant: () => { },
   config: defaultCursorConfig,
   mousePosition: { x: 0, y: 0 },
-  resetCursorToDefault: () => {},
+  resetCursorToDefault: () => { },
+  setGlobalCursorVariant: () => { },
+  clearGlobalCursorVariant: () => { },
 })
 
 export const useCursorContext = () => useContext(CursorContext)
@@ -51,6 +53,7 @@ export const CursorProvider: React.FC<CursorProviderProps> = ({
   const [variantStack, setVariantStack] = useState<string[]>(["default"])
   const lastMouseMoveRef = useRef<number>(Date.now())
   const resetTimeoutRef = useRef<NodeJS.Timeout | null>(null)
+  const [globalVariant, setGlobalVariant] = useState<string | null>(null);
 
   const pushVariant = (variant: string) => {
     setVariantStack((prev) => [...prev, variant])
@@ -127,7 +130,7 @@ export const CursorProvider: React.FC<CursorProviderProps> = ({
     }
   }, [variantStack])
 
-  const topVariant = variantStack[variantStack.length - 1]
+  const topVariant = globalVariant ?? variantStack[variantStack.length - 1]
   const currentConfig = config[topVariant] ?? config.default
   const cursorState: CursorState = {
     ...currentConfig,
@@ -158,6 +161,8 @@ export const CursorProvider: React.FC<CursorProviderProps> = ({
         resetCursorToDefault,
         config,
         mousePosition,
+        setGlobalCursorVariant: setGlobalVariant,
+        clearGlobalCursorVariant: () => setGlobalVariant(null),
       }}
     >
       {children}
